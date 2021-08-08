@@ -1,10 +1,15 @@
 import fetch from 'node-fetch';
 import imageSize from 'image-size';
+import { UnsupportedMediaTypeException } from '@nestjs/common';
 
 export const getImageSize = async (url: string) => {
   const response = await fetch(url);
   const buffer = await response.buffer();
 
-  const { width, height } = imageSize(buffer);
-  return { width, height };
+  try {
+    const { width, height } = imageSize(buffer);
+    return { width, height };
+  } catch {
+    throw new UnsupportedMediaTypeException();
+  }
 };
