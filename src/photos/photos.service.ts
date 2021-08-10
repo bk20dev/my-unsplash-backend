@@ -28,4 +28,8 @@ export class PhotosService {
   findAll(): Promise<Photo[]> {
     return this.photosRepository.find();
   }
+
+  deleteOne(id: string) {
+    return this.photosRepository.delete(id);
+  }
 }
