@@ -1,73 +1,95 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+<h1 align="center">My Unsplash (Backend)</h1>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<div align="center">
+   Solution for a challenge from <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.<br>
+</div>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+<div align="center">
+  <h3>
+    <!-- <a href="https://{your-demo-link.your-domain}">
+      Demo
+    </a>
+    <span> | </span>-->
+    <a href="https://devchallenges.io/solutions/qJaLkJZko8ZDP8qyXz5v">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-## Description
+## Notice
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This repository is part of <i>My Unsplash</i> project.
+Check out the frontend part <a href="https://github.com/bk20dev/my-unsplash-frontend" target="_blank">here</a>.
 
-## Installation
+## Table of Contents
+
+- [Notice](#notice)
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [How To Use](#how-to-use)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
+
+## Overview
+
+<figure>
+  <img src="https://user-images.githubusercontent.com/60577942/128927740-dd4ff0e8-aec7-4111-9a52-cfaee865bd24.gif" alt="basic functionality demo">
+  <figcaption>Basic functionality</figcaption>
+</figure>
+
+<figure>
+  <img src="https://user-images.githubusercontent.com/60577942/128929010-5cfbfed3-77c7-4215-a621-cb2152c95124.gif" alt="advanced functionality demo">
+  <figcaption>Advanced functionality</figcaption>
+</figure>
+
+<figure>
+  <img src="https://user-images.githubusercontent.com/60577942/128934972-e1f4befd-7b6b-488a-81eb-c04d77592a1a.png" alt="responsive design" height="500">
+  <figcaption>Responsive design</figcaption>
+</figure>
+
+I am a complete newbie to NestJS framework, so this time I practiced creating simple Create-Read-Delete API. Also I learned TypeORM (or at least followed a tutorial) for managing data in databases.
+
+### Built With
+
+- [NestJS](https://reactjs.org/)
+- [TypeORM](https://typeorm.io/)
+
+## Features
+
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP) was to build an application to complete the given user stories.
+
+- I can see a list of photos in the masonry layout that I have added
+- I can add a new photo to the list - the new photo should be on top of the list
+- I can search for photos by label
+- When I hover a photo, I can see a label and a delete button
+- I can delete images
+
+## How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
+# Clone this repository
+$ git clone https://github.com/bk20dev/my-unsplash-backend
+
+# Install dependencies
 $ npm install
+
+# Run the app
+$ npm start
 ```
 
-## Running the app
+## Acknowledgements
 
-```bash
-# development
-$ npm run start
+- [image-size](https://github.com/image-size/image-size)
 
-# watch mode
-$ npm run start:dev
+## Contact
 
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- GitHub [bk20dev](https://github.com/bk20dev/)
+- Discord [bk20#7915](https://discord.com/users/236373708350947328)
